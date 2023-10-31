@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+:root {
+  font-size: 10px;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -26,6 +30,10 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background: abs.$main-bg;
+  color: abs.$primary-text-color;
+  font-size: 1.6rem;
+  font-family: abs.$primary-font;
 }
 
 h1,
