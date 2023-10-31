@@ -1,0 +1,37 @@
+@use './functions' as f;
+
+
+$screen-xs-max: 360px;
+$screen-sm-max: 480px;
+$screen-md-max: 620px;
+$screen-lg-max: 1024px;
+$screen-xl-max: 1600px;
+
+$xs: 0;
+$sm: $screen-sm-max;
+$md: $screen-md-max;
+$lg: $screen-lg-max;
+$xl: $screen-lg-max;
+
+
+$media-breakpoints: (
+    xs: $xs,
+    sm: $sm,
+    md: $md,
+    lg: $lg,
+    xl: $xl
+);
+
+
+$max-width: f.toRem(1220);
+
+//bp
+$bp-phone: f.toRem($sm);
+$bp-tablet: f.toRem($md);
+$bp-desktop: f.toRem($lg);
+
+// Transitions
+$duration: 300ms;
+$timing: ease-in-out;
+
+
